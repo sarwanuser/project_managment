@@ -148,7 +148,7 @@
         <div class="card">
             <a href="{{url('/')}}"><i class="fa fa-arrow-circle-left" style="font-size:40px;position: absolute;left: 240px;" title="Click for view all projects"></i></a>
             <h3 class="heading">Project Details</h3>
-            <img src="{{url('/images/projects/'.$projects->main_image)}}" class="card-img-top" alt="{{$projects->main_image}}"/>
+            <img src="{{url('/public/images/projects/'.$projects->main_image)}}" class="card-img-top" alt="{{$projects->main_image}}"/>
             <div class="card-body">
                 <h5 class="card-title">Project Name - {{$projects->name}}</h5>
                 <p class="card-text">Used Technology - ({{$projects->technology}})</p>
@@ -160,9 +160,9 @@
         <div class="demo-gallery">
             <ul id="lightgallery" class="list-unstyled row">
                 @foreach($Images as $key1=>$Image1)
-                    <li class="col-xs-6 col-sm-4 col-md-3" data-src="{{url('/images/projects/subimg/'.$Image1->pr_sub_image)}}" data-sub-html="<h4>{{$Image1->pr_sub_title}}</h4>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+                    <li class="col-xs-6 col-sm-4 col-md-3" data-src="{{url('/public/images/projects/subimg/'.$Image1->pr_sub_image)}}" data-sub-html="<h4>{{$Image1->pr_sub_title}}</h4>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
                         <a href="">
-                            <img class="img-responsive" src="{{url('/images/projects/subimg/'.$Image1->pr_sub_image)}}" alt="{{$Image1->pr_sub_image}}" style="min-height: 150px;">
+                            <img class="img-responsive" src="{{url('/public/images/projects/subimg/'.$Image1->pr_sub_image)}}" alt="{{$Image1->pr_sub_image}}" style="min-height: 150px;">
                         </a>
                     </li>
                 @endforeach

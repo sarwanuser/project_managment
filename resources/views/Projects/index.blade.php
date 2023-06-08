@@ -57,7 +57,7 @@
                         <div class="col-md-4">  
                             <div class="card">
                                 <a href="{{url('/'.$project->id)}}" class="clickable">
-                                    <img src="{{url('/images/projects/'.$project->main_image)}}" class="card-img-top" alt="{{$project->main_image}}" width="100%" height="125px"/>
+                                    <img src="{{url('/public/images/projects/'.$project->main_image)}}" class="card-img-top" alt="{{$project->main_image}}" width="100%" height="125px"/>
                                     <div class="card-body">
                                         <h5 class="card-title">{{$project->name}}</h5>
                                         <p class="card-text">({{$project->technology}})</p>
