@@ -41,7 +41,7 @@
                 <!-- Start Projects Heading -->
                     <div class="row">
                         <div class="col-md-3">
-                            <br><a href="{{url('/projects')}}"><i class="fa fa-arrow-circle-left" style="font-size:40px" title="Click for view all projects"></i></a>
+                            <br><a href="{{url('/')}}"><i class="fa fa-arrow-circle-left" style="font-size:40px" title="Click for view all projects"></i></a>
                         </div>
                         
                         <div class="col-md-9">
@@ -143,7 +143,7 @@
                 var form = new FormData(this);
                 let files = jQuery('#company_logo');
                 form.append('files', files);
-                var url = '/projects/store';
+                var url = '/store';
                 jQuery.ajax({
                     type: 'POST',
                     url: url,

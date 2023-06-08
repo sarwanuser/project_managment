@@ -43,7 +43,7 @@
                 <!-- Start Projects Heading -->
                 <div class="row">
                     <div class="col-md-3">
-                        <br><a class="btn btn-primary" href="{{url('/projects/create')}}"><i class="fa fa-plus" style="font-size:15px" title="Click for add new project"></i></a>
+                        <br><a class="btn btn-primary" href="{{url('/create')}}"><i class="fa fa-plus" style="font-size:15px" title="Click for add new project"></i></a>
                     </div>
                     
                     <div class="col-md-9">
@@ -56,7 +56,7 @@
                     @foreach($projects as $key=>$project)
                         <div class="col-md-4">  
                             <div class="card">
-                                <a href="{{url('/projects/'.$project->id)}}" class="clickable">
+                                <a href="{{url('/'.$project->id)}}" class="clickable">
                                     <img src="{{url('/images/projects/'.$project->main_image)}}" class="card-img-top" alt="{{$project->main_image}}" width="100%" height="125px"/>
                                     <div class="card-body">
                                         <h5 class="card-title">{{$project->name}}</h5>
