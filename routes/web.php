@@ -13,11 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 
+
+Route::get('/', 'ProjectController@index');
 Route::get('/projects', 'ProjectController@index');
 Route::get('/projects/create', 'ProjectController@create');
 Route::get('/projects/{id}', 'ProjectController@show');
