@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Project Details</title>
-        <link href="{{url('/dist/css/lightgallery.css')}}" rel="stylesheet">
+        <link href="{{url('/public/dist/css/lightgallery.css')}}" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             body{
@@ -176,7 +176,7 @@
         <script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
         <script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
         <script src="https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js"></script>
-        <script src="{{url('/dist/js/lg-rotate.js')}}"></script>
+        <script src="{{url('/public/dist/js/lg-rotate.js')}}"></script>
         <script>
             lightGallery(document.getElementById('lightgallery'));
         </script>
